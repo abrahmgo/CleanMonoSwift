@@ -15,3 +15,12 @@ target 'NetworkCore' do
   networking
   
 end
+
+## Core
+
+target 'Core' do
+  project 'Data/Core/Core/Core'
+  
+  networking
+  
+end

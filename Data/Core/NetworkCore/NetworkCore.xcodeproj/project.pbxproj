@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B61A91E525C4C9D20025A9CA /* NetworkCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61A91E425C4C9D20025A9CA /* NetworkCoreData.swift */; };
+		B61A91E825C4C9F40025A9CA /* NetworkCoreError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61A91E725C4C9F40025A9CA /* NetworkCoreError.swift */; };
+		B61A91EE25C4CE6C0025A9CA /* NetworkCoreSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61A91ED25C4CE6C0025A9CA /* NetworkCoreSampleData.swift */; };
 		B658CC4325C3B210007DC337 /* NetworkCore.h in Headers */ = {isa = PBXBuildFile; fileRef = B658CC4125C3B210007DC337 /* NetworkCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B658CD6725C3B6B9007DC337 /* NetworkTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658CD6625C3B6B9007DC337 /* NetworkTargetType.swift */; };
 		B66C730725C3C02F0034BE9B /* NetworkCoreConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66C730625C3C02F0034BE9B /* NetworkCoreConfig.swift */; };
@@ -18,6 +21,9 @@
 /* Begin PBXFileReference section */
 		01D47D96A3AD75DC4209A4D3 /* Pods-NetworkCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkCore.release.xcconfig"; path = "Target Support Files/Pods-NetworkCore/Pods-NetworkCore.release.xcconfig"; sourceTree = "<group>"; };
 		76ED4E892688A6291BCB3881 /* Pods-NetworkCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkCore.debug.xcconfig"; path = "Target Support Files/Pods-NetworkCore/Pods-NetworkCore.debug.xcconfig"; sourceTree = "<group>"; };
+		B61A91E425C4C9D20025A9CA /* NetworkCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkCoreData.swift; sourceTree = "<group>"; };
+		B61A91E725C4C9F40025A9CA /* NetworkCoreError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkCoreError.swift; sourceTree = "<group>"; };
+		B61A91ED25C4CE6C0025A9CA /* NetworkCoreSampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkCoreSampleData.swift; sourceTree = "<group>"; };
 		B658CC3E25C3B210007DC337 /* NetworkCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B658CC4125C3B210007DC337 /* NetworkCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkCore.h; sourceTree = "<group>"; };
 		B658CC4225C3B210007DC337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,6 +100,9 @@
 				B658CD6625C3B6B9007DC337 /* NetworkTargetType.swift */,
 				B66C730625C3C02F0034BE9B /* NetworkCoreConfig.swift */,
 				B66C730925C3C0780034BE9B /* NetworkService.swift */,
+				B61A91E425C4C9D20025A9CA /* NetworkCoreData.swift */,
+				B61A91E725C4C9F40025A9CA /* NetworkCoreError.swift */,
+				B61A91ED25C4CE6C0025A9CA /* NetworkCoreSampleData.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -204,8 +213,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B658CD6725C3B6B9007DC337 /* NetworkTargetType.swift in Sources */,
+				B61A91E525C4C9D20025A9CA /* NetworkCoreData.swift in Sources */,
 				B66C730A25C3C0780034BE9B /* NetworkService.swift in Sources */,
+				B61A91E825C4C9F40025A9CA /* NetworkCoreError.swift in Sources */,
 				B66C730725C3C02F0034BE9B /* NetworkCoreConfig.swift in Sources */,
+				B61A91EE25C4CE6C0025A9CA /* NetworkCoreSampleData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
