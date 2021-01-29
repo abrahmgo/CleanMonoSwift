@@ -48,8 +48,16 @@
 			children = (
 				B658CCA325C3B305007DC337 /* Components.h */,
 				B658CCA425C3B305007DC337 /* Info.plist */,
+				B658CD6425C3B63D007DC337 /* CollectionCells */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		B658CD6425C3B63D007DC337 /* CollectionCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CollectionCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

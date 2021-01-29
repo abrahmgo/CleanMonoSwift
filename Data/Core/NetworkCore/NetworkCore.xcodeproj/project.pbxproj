@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		B658CC4325C3B210007DC337 /* NetworkCore.h in Headers */ = {isa = PBXBuildFile; fileRef = B658CC4125C3B210007DC337 /* NetworkCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B658CD6725C3B6B9007DC337 /* NetworkTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658CD6625C3B6B9007DC337 /* NetworkTargetType.swift */; };
+		B66C730725C3C02F0034BE9B /* NetworkCoreConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66C730625C3C02F0034BE9B /* NetworkCoreConfig.swift */; };
+		B66C730A25C3C0780034BE9B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66C730925C3C0780034BE9B /* NetworkService.swift */; };
+		B66C731125C3C2940034BE9B /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66C731025C3C2940034BE9B /* Utils.framework */; };
+		CC03224DC25D568BDEB9BBE8 /* Pods_NetworkCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D99C0D38E04FEE641E3DF7E3 /* Pods_NetworkCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01D47D96A3AD75DC4209A4D3 /* Pods-NetworkCore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkCore.release.xcconfig"; path = "Target Support Files/Pods-NetworkCore/Pods-NetworkCore.release.xcconfig"; sourceTree = "<group>"; };
+		76ED4E892688A6291BCB3881 /* Pods-NetworkCore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkCore.debug.xcconfig"; path = "Target Support Files/Pods-NetworkCore/Pods-NetworkCore.debug.xcconfig"; sourceTree = "<group>"; };
 		B658CC3E25C3B210007DC337 /* NetworkCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NetworkCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B658CC4125C3B210007DC337 /* NetworkCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkCore.h; sourceTree = "<group>"; };
 		B658CC4225C3B210007DC337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B658CD6625C3B6B9007DC337 /* NetworkTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTargetType.swift; sourceTree = "<group>"; };
+		B66C730625C3C02F0034BE9B /* NetworkCoreConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCoreConfig.swift; sourceTree = "<group>"; };
+		B66C730925C3C0780034BE9B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B66C731025C3C2940034BE9B /* Utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D99C0D38E04FEE641E3DF7E3 /* Pods_NetworkCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +33,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B66C731125C3C2940034BE9B /* Utils.framework in Frameworks */,
+				CC03224DC25D568BDEB9BBE8 /* Pods_NetworkCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		164B40B5006231DF2D1AD6CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				76ED4E892688A6291BCB3881 /* Pods-NetworkCore.debug.xcconfig */,
+				01D47D96A3AD75DC4209A4D3 /* Pods-NetworkCore.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../../Pods;
+			sourceTree = "<group>";
+		};
+		1662E0C3379A3B54F629F7CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B66C731025C3C2940034BE9B /* Utils.framework */,
+				D99C0D38E04FEE641E3DF7E3 /* Pods_NetworkCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B658CC3425C3B210007DC337 = {
 			isa = PBXGroup;
 			children = (
 				B658CC4025C3B210007DC337 /* NetworkCore */,
 				B658CC3F25C3B210007DC337 /* Products */,
+				164B40B5006231DF2D1AD6CB /* Pods */,
+				1662E0C3379A3B54F629F7CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +81,21 @@
 		B658CC4025C3B210007DC337 /* NetworkCore */ = {
 			isa = PBXGroup;
 			children = (
+				B658CD6525C3B6A6007DC337 /* Network */,
 				B658CC4125C3B210007DC337 /* NetworkCore.h */,
 				B658CC4225C3B210007DC337 /* Info.plist */,
 			);
 			path = NetworkCore;
+			sourceTree = "<group>";
+		};
+		B658CD6525C3B6A6007DC337 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B658CD6625C3B6B9007DC337 /* NetworkTargetType.swift */,
+				B66C730625C3C02F0034BE9B /* NetworkCoreConfig.swift */,
+				B66C730925C3C0780034BE9B /* NetworkService.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +116,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B658CC4625C3B210007DC337 /* Build configuration list for PBXNativeTarget "NetworkCore" */;
 			buildPhases = (
+				5ACEEEC65287C5130B780784 /* [CP] Check Pods Manifest.lock */,
 				B658CC3925C3B210007DC337 /* Headers */,
 				B658CC3A25C3B210007DC337 /* Sources */,
 				B658CC3B25C3B210007DC337 /* Frameworks */,
@@ -94,6 +141,7 @@
 				TargetAttributes = {
 					B658CC3D25C3B210007DC337 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -125,11 +173,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5ACEEEC65287C5130B780784 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NetworkCore-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B658CC3A25C3B210007DC337 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B658CD6725C3B6B9007DC337 /* NetworkTargetType.swift in Sources */,
+				B66C730A25C3C0780034BE9B /* NetworkService.swift in Sources */,
+				B66C730725C3C02F0034BE9B /* NetworkCoreConfig.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +336,9 @@
 		};
 		B658CC4725C3B210007DC337 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76ED4E892688A6291BCB3881 /* Pods-NetworkCore.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -276,6 +354,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.andres.bonilla.NetworkCore;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -283,7 +362,9 @@
 		};
 		B658CC4825C3B210007DC337 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01D47D96A3AD75DC4209A4D3 /* Pods-NetworkCore.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
