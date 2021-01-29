@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B61A91F825C4CF240025A9CA /* GetSearchProductsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61A91F725C4CF240025A9CA /* GetSearchProductsUseCase.swift */; };
 		B658CCEC25C3B3B9007DC337 /* CoreUseCases.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B658CCE225C3B3B9007DC337 /* CoreUseCases.framework */; };
 		B658CCF125C3B3B9007DC337 /* CoreUseCasesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658CCF025C3B3B9007DC337 /* CoreUseCasesTests.swift */; };
 		B658CCF325C3B3B9007DC337 /* CoreUseCases.h in Headers */ = {isa = PBXBuildFile; fileRef = B658CCE525C3B3B9007DC337 /* CoreUseCases.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +24,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B61A91F725C4CF240025A9CA /* GetSearchProductsUseCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetSearchProductsUseCase.swift; sourceTree = "<group>"; };
 		B658CCE225C3B3B9007DC337 /* CoreUseCases.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreUseCases.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B658CCE525C3B3B9007DC337 /* CoreUseCases.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreUseCases.h; sourceTree = "<group>"; };
 		B658CCE625C3B3B9007DC337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -50,6 +52,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B61A91F625C4CF130025A9CA /* SearchProduct */ = {
+			isa = PBXGroup;
+			children = (
+				B61A91F725C4CF240025A9CA /* GetSearchProductsUseCase.swift */,
+			);
+			path = SearchProduct;
+			sourceTree = "<group>";
+		};
 		B658CCD825C3B3B9007DC337 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +81,7 @@
 		B658CCE425C3B3B9007DC337 /* CoreUseCases */ = {
 			isa = PBXGroup;
 			children = (
+				B61A91F625C4CF130025A9CA /* SearchProduct */,
 				B658CCE525C3B3B9007DC337 /* CoreUseCases.h */,
 				B658CCE625C3B3B9007DC337 /* Info.plist */,
 			);
@@ -147,6 +158,7 @@
 				TargetAttributes = {
 					B658CCE125C3B3B9007DC337 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					B658CCEA25C3B3B9007DC337 = {
 						CreatedOnToolsVersion = 12.2;
@@ -194,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B61A91F825C4CF240025A9CA /* GetSearchProductsUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +354,7 @@
 		B658CCF725C3B3B9007DC337 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.andres.bonilla.CoreUseCases;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +379,7 @@
 		B658CCF825C3B3B9007DC337 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -387,6 +403,7 @@
 		B658CCFA25C3B3B9007DC337 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoreUseCasesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +421,7 @@
 		B658CCFB25C3B3B9007DC337 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoreUseCasesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

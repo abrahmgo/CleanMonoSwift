@@ -15,7 +15,7 @@ public struct CoreRemoteDataSource {
         return Bundle(identifier: "com.andres.bonilla.Core")
     }
     
-//    public static var searchProduct: SearchProductRemoteDataSourceType {
-//        return SearchProductAPI(service: NetworkCoreAPIConfig.shared.networkService)
-//    }
+    public static var searchProduct: SearchProductRemoteDataSourceType {
+        return SearchProductAPI(service: NetworkCoreAPIConfig.shared.networkService)
+    }
 }
