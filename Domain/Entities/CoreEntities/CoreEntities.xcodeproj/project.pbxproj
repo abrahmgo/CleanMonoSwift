@@ -7,10 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B63011A525C4C7AB00CC54C4 /* ItemRaiting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63011A025C4C7AB00CC54C4 /* ItemRaiting.swift */; };
+		B63011A625C4C7AB00CC54C4 /* ItemInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63011A125C4C7AB00CC54C4 /* ItemInformation.swift */; };
+		B63011A725C4C7AB00CC54C4 /* SearchProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63011A225C4C7AB00CC54C4 /* SearchProduct.swift */; };
+		B63011A825C4C7AB00CC54C4 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63011A325C4C7AB00CC54C4 /* Item.swift */; };
+		B63011A925C4C7AB00CC54C4 /* ScaleRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63011A425C4C7AB00CC54C4 /* ScaleRating.swift */; };
 		B658CCD125C3B36A007DC337 /* CoreEntities.h in Headers */ = {isa = PBXBuildFile; fileRef = B658CCCF25C3B36A007DC337 /* CoreEntities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B63011A025C4C7AB00CC54C4 /* ItemRaiting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemRaiting.swift; sourceTree = "<group>"; };
+		B63011A125C4C7AB00CC54C4 /* ItemInformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemInformation.swift; sourceTree = "<group>"; };
+		B63011A225C4C7AB00CC54C4 /* SearchProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchProduct.swift; sourceTree = "<group>"; };
+		B63011A325C4C7AB00CC54C4 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		B63011A425C4C7AB00CC54C4 /* ScaleRating.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaleRating.swift; sourceTree = "<group>"; };
 		B658CCCC25C3B36A007DC337 /* CoreEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CoreEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B658CCCF25C3B36A007DC337 /* CoreEntities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreEntities.h; sourceTree = "<group>"; };
 		B658CCD025C3B36A007DC337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,6 +37,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B630119F25C4C79E00CC54C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B63011A325C4C7AB00CC54C4 /* Item.swift */,
+				B63011A125C4C7AB00CC54C4 /* ItemInformation.swift */,
+				B63011A025C4C7AB00CC54C4 /* ItemRaiting.swift */,
+				B63011A425C4C7AB00CC54C4 /* ScaleRating.swift */,
+				B63011A225C4C7AB00CC54C4 /* SearchProduct.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
 		B658CCC225C3B36A007DC337 = {
 			isa = PBXGroup;
 			children = (
@@ -48,6 +70,7 @@
 			children = (
 				B658CCCF25C3B36A007DC337 /* CoreEntities.h */,
 				B658CCD025C3B36A007DC337 /* Info.plist */,
+				B630119F25C4C79E00CC54C4 /* Products */,
 			);
 			path = CoreEntities;
 			sourceTree = "<group>";
@@ -94,6 +117,7 @@
 				TargetAttributes = {
 					B658CCCB25C3B36A007DC337 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -130,6 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B63011A825C4C7AB00CC54C4 /* Item.swift in Sources */,
+				B63011A525C4C7AB00CC54C4 /* ItemRaiting.swift in Sources */,
+				B63011A725C4C7AB00CC54C4 /* SearchProduct.swift in Sources */,
+				B63011A625C4C7AB00CC54C4 /* ItemInformation.swift in Sources */,
+				B63011A925C4C7AB00CC54C4 /* ScaleRating.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +290,7 @@
 		B658CCD525C3B36A007DC337 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -276,6 +306,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.andres.bonilla.CoreEntities;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +315,7 @@
 		B658CCD625C3B36A007DC337 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

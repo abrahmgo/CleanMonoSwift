@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B630118825C4C6CB00CC54C4 /* CoreRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B630118725C4C6CB00CC54C4 /* CoreRemoteDataSource.swift */; };
+		B630118D25C4C6F200CC54C4 /* NetworkCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B630118C25C4C6F200CC54C4 /* NetworkCore.framework */; };
+		B630119225C4C6FB00CC54C4 /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B630119125C4C6FB00CC54C4 /* Utils.framework */; };
+		B630119625C4C70300CC54C4 /* CoreEntities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B630119525C4C70300CC54C4 /* CoreEntities.framework */; };
+		B630119A25C4C70A00CC54C4 /* CoreDataSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B630119925C4C70A00CC54C4 /* CoreDataSource.framework */; };
 		B658CC5E25C3B283007DC337 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B658CC5425C3B283007DC337 /* Core.framework */; };
 		B658CC6325C3B283007DC337 /* CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658CC6225C3B283007DC337 /* CoreTests.swift */; };
 		B658CC6525C3B284007DC337 /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = B658CC5725C3B283007DC337 /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -23,6 +28,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B630118725C4C6CB00CC54C4 /* CoreRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreRemoteDataSource.swift; sourceTree = "<group>"; };
+		B630118C25C4C6F200CC54C4 /* NetworkCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B630119125C4C6FB00CC54C4 /* Utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B630119525C4C70300CC54C4 /* CoreEntities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreEntities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B630119925C4C70A00CC54C4 /* CoreDataSource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreDataSource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B658CC5425C3B283007DC337 /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B658CC5725C3B283007DC337 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		B658CC5825C3B283007DC337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +46,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B630119A25C4C70A00CC54C4 /* CoreDataSource.framework in Frameworks */,
+				B630119625C4C70300CC54C4 /* CoreEntities.framework in Frameworks */,
+				B630119225C4C6FB00CC54C4 /* Utils.framework in Frameworks */,
+				B630118D25C4C6F200CC54C4 /* NetworkCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,12 +64,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B630118B25C4C6F200CC54C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B630119925C4C70A00CC54C4 /* CoreDataSource.framework */,
+				B630119525C4C70300CC54C4 /* CoreEntities.framework */,
+				B630119125C4C6FB00CC54C4 /* Utils.framework */,
+				B630118C25C4C6F200CC54C4 /* NetworkCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B63011BC25C4C8AB00CC54C4 /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
 		B658CC4A25C3B283007DC337 = {
 			isa = PBXGroup;
 			children = (
 				B658CC5625C3B283007DC337 /* Core */,
 				B658CC6125C3B283007DC337 /* CoreTests */,
 				B658CC5525C3B283007DC337 /* Products */,
+				B630118B25C4C6F200CC54C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +106,8 @@
 			children = (
 				B658CC5725C3B283007DC337 /* Core.h */,
 				B658CC5825C3B283007DC337 /* Info.plist */,
+				B630118725C4C6CB00CC54C4 /* CoreRemoteDataSource.swift */,
+				B63011BC25C4C8AB00CC54C4 /* Remote */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -147,6 +182,7 @@
 				TargetAttributes = {
 					B658CC5325C3B283007DC337 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 					B658CC5C25C3B283007DC337 = {
 						CreatedOnToolsVersion = 12.2;
@@ -194,6 +230,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B630118825C4C6CB00CC54C4 /* CoreRemoteDataSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +378,7 @@
 		B658CC6925C3B284007DC337 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +394,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.andres.bonilla.Core;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +403,7 @@
 		B658CC6A25C3B284007DC337 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -387,6 +427,7 @@
 		B658CC6C25C3B284007DC337 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +445,7 @@
 		B658CC6D25C3B284007DC337 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CoreTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
