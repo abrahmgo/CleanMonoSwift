@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Apps"
+      name = "Apps">
+      <FileRef
+         location = "group:CleanMonoSwift/CleanMonoSwift.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Domain"
+      name = "Domain">
+      <Group
+         location = "group:UseCases"
+         name = "UseCases">
+         <FileRef
+            location = "group:CoreUseCases/CoreUseCases.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Entities"
+         name = "Entities">
+         <FileRef
+            location = "group:CoreEntities/CoreEntities.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:Features"
+      name = "Features">
+      <FileRef
+         location = "group:Login/Login.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Data"
+      name = "Data">
+      <Group
+         location = "group:Core"
+         name = "Core">
+         <FileRef
+            location = "group:Core/Core.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:NetworkCore/NetworkCore.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "group:Gateways"
+         name = "Gateways">
+         <FileRef
+            location = "group:CoreDataSource/CoreDataSource.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "group:UI"
+      name = "UI">
+      <FileRef
+         location = "group:Components/Components.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "group:Common"
+      name = "Common">
+      <FileRef
+         location = "group:Analytics/Analytics.xcodeproj">
+      </FileRef>
+      <FileRef
+         location = "group:Utils/Utils.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>
