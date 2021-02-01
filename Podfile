@@ -7,10 +7,15 @@ def networking
   pod 'Alamofire', '~> 5.2'
 end
 
+def ui
+  pod 'SDWebImageSwiftUI'
+end
+
 target 'CleanMonoSwift' do
   project 'Apps/CleanMonoSwift/CleanMonoSwift'
   
   networking
+  ui
   
 end
 
@@ -30,4 +35,12 @@ target 'Core' do
   
   networking
   
+end
+
+## Components
+
+target 'Components' do
+  project 'UI/Components/Components'
+  
+  ui
 end

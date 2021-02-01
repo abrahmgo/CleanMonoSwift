@@ -17,7 +17,7 @@ struct CleanMonoSwiftApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ProductsView()
         }
     }
 }

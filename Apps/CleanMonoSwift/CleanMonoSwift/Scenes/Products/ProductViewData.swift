@@ -24,12 +24,12 @@ public struct ProductViewData: ProductViewDataType, Identifiable {
         return itemTitle
     }
     
-    public var imgProduct: String {
+    public var url: URL? {
         guard let url = item.item?.imgUrl else {
-            return ""
+            return URL(string: "www.google.com")
         }
         
-        return url.absoluteString
+        return url
     }
     
     public var price: String {

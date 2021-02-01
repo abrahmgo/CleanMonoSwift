@@ -8,8 +8,7 @@
 import SwiftUI
 import Components
 
-struct ContentView: View {
-    
+struct ProductsView: View {
     
     @ObservedObject private var viewModel =
         ProductsViewModel(dependencies: ProductsFactory.makeProductsFactoryDependencies())
@@ -41,6 +40,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ProductsView()
     }
 }

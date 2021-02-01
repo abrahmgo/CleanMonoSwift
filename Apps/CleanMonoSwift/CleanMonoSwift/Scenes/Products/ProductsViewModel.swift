@@ -16,7 +16,6 @@ public class ProductsViewModel: ObservableObject, ProductsViewModelType, Product
     // MARK: Inputs
     
     // MARK: Outputs
-    public let components = CurrentValueSubject<[ProductsComponent], Never>([])
     public let isLoading = CurrentValueSubject<Bool, Never>(false)
     public let error = PassthroughSubject<Error, Never>()
     public var objectWillChange = PassthroughSubject<Void, Never>()
