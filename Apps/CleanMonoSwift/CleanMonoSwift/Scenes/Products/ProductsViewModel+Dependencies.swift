@@ -8,11 +8,13 @@
 import Foundation
 import Combine
 import CoreUseCases
+import Components
 
 public protocol ProductsViewModelOutputs {
     var components: CurrentValueSubject<[ProductsComponent], Never> { get }
     var isLoading: CurrentValueSubject<Bool, Never> { get }
     var error: PassthroughSubject<Error, Never> { get }
+    var items: [ProductViewData] { get }
 }
 
 public protocol ProductsViewModelInputs { }

@@ -12,6 +12,7 @@
 		B61A91EE25C4CE6C0025A9CA /* NetworkCoreSampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61A91ED25C4CE6C0025A9CA /* NetworkCoreSampleData.swift */; };
 		B658CC4325C3B210007DC337 /* NetworkCore.h in Headers */ = {isa = PBXBuildFile; fileRef = B658CC4125C3B210007DC337 /* NetworkCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B658CD6725C3B6B9007DC337 /* NetworkTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658CD6625C3B6B9007DC337 /* NetworkTargetType.swift */; };
+		B662A23225C79BBC007EB253 /* NetworkCoreAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B662A23125C79BBC007EB253 /* NetworkCoreAPI.swift */; };
 		B66C730725C3C02F0034BE9B /* NetworkCoreConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66C730625C3C02F0034BE9B /* NetworkCoreConfig.swift */; };
 		B66C730A25C3C0780034BE9B /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66C730925C3C0780034BE9B /* NetworkService.swift */; };
 		B66C731125C3C2940034BE9B /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B66C731025C3C2940034BE9B /* Utils.framework */; };
@@ -28,6 +29,7 @@
 		B658CC4125C3B210007DC337 /* NetworkCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkCore.h; sourceTree = "<group>"; };
 		B658CC4225C3B210007DC337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B658CD6625C3B6B9007DC337 /* NetworkTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTargetType.swift; sourceTree = "<group>"; };
+		B662A23125C79BBC007EB253 /* NetworkCoreAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCoreAPI.swift; sourceTree = "<group>"; };
 		B66C730625C3C02F0034BE9B /* NetworkCoreConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCoreConfig.swift; sourceTree = "<group>"; };
 		B66C730925C3C0780034BE9B /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		B66C731025C3C2940034BE9B /* Utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,12 +99,13 @@
 		B658CD6525C3B6A6007DC337 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				B658CD6625C3B6B9007DC337 /* NetworkTargetType.swift */,
+				B662A23125C79BBC007EB253 /* NetworkCoreAPI.swift */,
 				B66C730625C3C02F0034BE9B /* NetworkCoreConfig.swift */,
-				B66C730925C3C0780034BE9B /* NetworkService.swift */,
 				B61A91E425C4C9D20025A9CA /* NetworkCoreData.swift */,
 				B61A91E725C4C9F40025A9CA /* NetworkCoreError.swift */,
 				B61A91ED25C4CE6C0025A9CA /* NetworkCoreSampleData.swift */,
+				B66C730925C3C0780034BE9B /* NetworkService.swift */,
+				B658CD6625C3B6B9007DC337 /* NetworkTargetType.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				B61A91E825C4C9F40025A9CA /* NetworkCoreError.swift in Sources */,
 				B66C730725C3C02F0034BE9B /* NetworkCoreConfig.swift in Sources */,
 				B61A91EE25C4CE6C0025A9CA /* NetworkCoreSampleData.swift in Sources */,
+				B662A23225C79BBC007EB253 /* NetworkCoreAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

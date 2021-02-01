@@ -122,14 +122,10 @@ public struct MockNetworkProvider: NetworkService {
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.20) {
                 if let decoded = try? JSONDecoder().decode(T.self, from: sampleData) {
                     observer.onNext(decoded)
-                    observer.onComplete()
                 } else {
                     observer.onError("error")
                 }
             }
-            
-            observer.onComplete()
-            
             return Disposable()
         }
     }

@@ -6,9 +6,15 @@
 //
 
 import SwiftUI
+import NetworkCore
 
 @main
 struct CleanMonoSwiftApp: App {
+    
+    init() {
+        NetworkCoreAPI.setup(with: APIConfig.self)
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

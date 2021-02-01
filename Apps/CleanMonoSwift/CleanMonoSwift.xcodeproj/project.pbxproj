@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -22,6 +22,15 @@
 		B658CD3E25C3B48B007DC337 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B658CD3D25C3B48B007DC337 /* Preview Assets.xcassets */; };
 		B658CD4925C3B48B007DC337 /* CleanMonoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658CD4825C3B48B007DC337 /* CleanMonoSwiftTests.swift */; };
 		B658CD5425C3B48B007DC337 /* CleanMonoSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658CD5325C3B48B007DC337 /* CleanMonoSwiftUITests.swift */; };
+		B662A1EB25C79502007EB253 /* ProductsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B662A1EA25C79502007EB253 /* ProductsFactory.swift */; };
+		B662A21225C79AFA007EB253 /* APIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B662A21125C79AFA007EB253 /* APIConfig.swift */; };
+		B662A21625C79B0F007EB253 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B662A21525C79B0F007EB253 /* API.swift */; };
+		B662A21C25C79B54007EB253 /* NetworkCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B662A21B25C79B54007EB253 /* NetworkCore.framework */; };
+		B662A21D25C79B54007EB253 /* NetworkCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B662A21B25C79B54007EB253 /* NetworkCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6D6438925C4E4A10056F719 /* ProductsComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D6438825C4E4A10056F719 /* ProductsComponent.swift */; };
+		B6D6438D25C4E4E60056F719 /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D6438C25C4E4E60056F719 /* ProductsViewModel.swift */; };
+		B6D6439125C4E5D10056F719 /* ProductViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D6439025C4E5D10056F719 /* ProductViewData.swift */; };
+		FDC0F9C067B96F0987F584FE /* Pods_CleanMonoSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8E3DBE623A3C4D28BBA1AEC /* Pods_CleanMonoSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +59,7 @@
 			files = (
 				B61A920825C4CFBB0025A9CA /* Utils.framework in Embed Frameworks */,
 				B61A91FE25C4CFA80025A9CA /* Components.framework in Embed Frameworks */,
+				B662A21D25C79B54007EB253 /* NetworkCore.framework in Embed Frameworks */,
 				B61A920525C4CFB60025A9CA /* Core.framework in Embed Frameworks */,
 				B61A920225C4CFAF0025A9CA /* CoreUseCases.framework in Embed Frameworks */,
 			);
@@ -59,6 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		277C1C93D9322BB2F0F54C10 /* Pods-CleanMonoSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMonoSwift.debug.xcconfig"; path = "Target Support Files/Pods-CleanMonoSwift/Pods-CleanMonoSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		B61A91FC25C4CFA80025A9CA /* Components.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Components.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B61A920025C4CFAF0025A9CA /* CoreUseCases.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CoreUseCases.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B61A920325C4CFB60025A9CA /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +87,15 @@
 		B658CD4F25C3B48B007DC337 /* CleanMonoSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CleanMonoSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B658CD5325C3B48B007DC337 /* CleanMonoSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanMonoSwiftUITests.swift; sourceTree = "<group>"; };
 		B658CD5525C3B48B007DC337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B662A1EA25C79502007EB253 /* ProductsFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsFactory.swift; sourceTree = "<group>"; };
+		B662A21125C79AFA007EB253 /* APIConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConfig.swift; sourceTree = "<group>"; };
+		B662A21525C79B0F007EB253 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		B662A21B25C79B54007EB253 /* NetworkCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D6438825C4E4A10056F719 /* ProductsComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsComponent.swift; sourceTree = "<group>"; };
+		B6D6438C25C4E4E60056F719 /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		B6D6439025C4E5D10056F719 /* ProductViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewData.swift; sourceTree = "<group>"; };
+		C26F2B7799F944D9F3FE8AA0 /* Pods-CleanMonoSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanMonoSwift.release.xcconfig"; path = "Target Support Files/Pods-CleanMonoSwift/Pods-CleanMonoSwift.release.xcconfig"; sourceTree = "<group>"; };
+		C8E3DBE623A3C4D28BBA1AEC /* Pods_CleanMonoSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CleanMonoSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +105,10 @@
 			files = (
 				B61A920725C4CFBB0025A9CA /* Utils.framework in Frameworks */,
 				B61A91FD25C4CFA80025A9CA /* Components.framework in Frameworks */,
+				B662A21C25C79B54007EB253 /* NetworkCore.framework in Frameworks */,
 				B61A920425C4CFB60025A9CA /* Core.framework in Frameworks */,
 				B61A920125C4CFAF0025A9CA /* CoreUseCases.framework in Frameworks */,
+				FDC0F9C067B96F0987F584FE /* Pods_CleanMonoSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,13 +129,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E44315D9E8FA620D9259950 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				277C1C93D9322BB2F0F54C10 /* Pods-CleanMonoSwift.debug.xcconfig */,
+				C26F2B7799F944D9F3FE8AA0 /* Pods-CleanMonoSwift.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../Pods;
+			sourceTree = "<group>";
+		};
 		B61A91FB25C4CFA80025A9CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B662A21B25C79B54007EB253 /* NetworkCore.framework */,
 				B61A920625C4CFBB0025A9CA /* Utils.framework */,
 				B61A920325C4CFB60025A9CA /* Core.framework */,
 				B61A920025C4CFAF0025A9CA /* CoreUseCases.framework */,
 				B61A91FC25C4CFA80025A9CA /* Components.framework */,
+				C8E3DBE623A3C4D28BBA1AEC /* Pods_CleanMonoSwift.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,7 +163,12 @@
 		B61A921425C4D0DC0025A9CA /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				B658CD3825C3B489007DC337 /* ContentView.swift */,
 				B61A921525C4D0E60025A9CA /* ProductsViewModel+Dependencies.swift */,
+				B6D6438825C4E4A10056F719 /* ProductsComponent.swift */,
+				B6D6438C25C4E4E60056F719 /* ProductsViewModel.swift */,
+				B6D6439025C4E5D10056F719 /* ProductViewData.swift */,
+				B662A1EA25C79502007EB253 /* ProductsFactory.swift */,
 			);
 			path = Products;
 			sourceTree = "<group>";
@@ -142,6 +181,7 @@
 				B658CD5225C3B48B007DC337 /* CleanMonoSwiftUITests */,
 				B658CD3425C3B489007DC337 /* Products */,
 				B61A91FB25C4CFA80025A9CA /* Frameworks */,
+				8E44315D9E8FA620D9259950 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,9 +199,9 @@
 			isa = PBXGroup;
 			children = (
 				B658CD3625C3B489007DC337 /* CleanMonoSwiftApp.swift */,
-				B658CD3825C3B489007DC337 /* ContentView.swift */,
 				B658CD3A25C3B48B007DC337 /* Assets.xcassets */,
 				B658CD3F25C3B48B007DC337 /* Info.plist */,
+				B662A21025C79AEB007EB253 /* Config */,
 				B61A920B25C4D0C70025A9CA /* Scenes */,
 				B658CD3C25C3B48B007DC337 /* Preview Content */,
 			);
@@ -194,6 +234,15 @@
 			path = CleanMonoSwiftUITests;
 			sourceTree = "<group>";
 		};
+		B662A21025C79AEB007EB253 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				B662A21125C79AFA007EB253 /* APIConfig.swift */,
+				B662A21525C79B0F007EB253 /* API.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -201,10 +250,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B658CD5825C3B48B007DC337 /* Build configuration list for PBXNativeTarget "CleanMonoSwift" */;
 			buildPhases = (
+				E6BCECF3B0CD68757104F68E /* [CP] Check Pods Manifest.lock */,
 				B658CD2F25C3B489007DC337 /* Sources */,
 				B658CD3025C3B489007DC337 /* Frameworks */,
 				B658CD3125C3B489007DC337 /* Resources */,
 				B61A91FF25C4CFA80025A9CA /* Embed Frameworks */,
+				8604F01566A68613B3E3C125 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -319,13 +370,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8604F01566A68613B3E3C125 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CleanMonoSwift/Pods-CleanMonoSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CleanMonoSwift/Pods-CleanMonoSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CleanMonoSwift/Pods-CleanMonoSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6BCECF3B0CD68757104F68E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CleanMonoSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B658CD2F25C3B489007DC337 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B662A1EB25C79502007EB253 /* ProductsFactory.swift in Sources */,
+				B6D6439125C4E5D10056F719 /* ProductViewData.swift in Sources */,
+				B662A21225C79AFA007EB253 /* APIConfig.swift in Sources */,
 				B61A921625C4D0E60025A9CA /* ProductsViewModel+Dependencies.swift in Sources */,
+				B6D6438925C4E4A10056F719 /* ProductsComponent.swift in Sources */,
 				B658CD3925C3B489007DC337 /* ContentView.swift in Sources */,
+				B6D6438D25C4E4E60056F719 /* ProductsViewModel.swift in Sources */,
+				B662A21625C79B0F007EB253 /* API.swift in Sources */,
 				B658CD3725C3B489007DC337 /* CleanMonoSwiftApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,6 +579,7 @@
 		};
 		B658CD5925C3B48B007DC337 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 277C1C93D9322BB2F0F54C10 /* Pods-CleanMonoSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -501,6 +601,7 @@
 		};
 		B658CD5A25C3B48B007DC337 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C26F2B7799F944D9F3FE8AA0 /* Pods-CleanMonoSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

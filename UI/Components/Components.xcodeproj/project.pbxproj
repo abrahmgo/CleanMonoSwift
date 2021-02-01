@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B61A923725C4D34E0025A9CA /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61A923625C4D34E0025A9CA /* ProductCollectionViewCell.swift */; };
 		B658CCA525C3B305007DC337 /* Components.h in Headers */ = {isa = PBXBuildFile; fileRef = B658CCA325C3B305007DC337 /* Components.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B66B41FC25C4D6230079DC8A /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61A923625C4D34E0025A9CA /* ProductCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -142,7 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B61A923725C4D34E0025A9CA /* ProductCollectionViewCell.swift in Sources */,
+				B66B41FC25C4D6230079DC8A /* ProductCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

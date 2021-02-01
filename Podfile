@@ -7,6 +7,13 @@ def networking
   pod 'Alamofire', '~> 5.2'
 end
 
+target 'CleanMonoSwift' do
+  project 'Apps/CleanMonoSwift/CleanMonoSwift'
+  
+  networking
+  
+end
+
 ## NetworkCore
 
 target 'NetworkCore' do
