@@ -1,5 +1,5 @@
 //
-//  ProductCollectionViewCell.swift
+//  ProductViewCell.swift
 //  Components
 //
 //  Created by Andrés Bonilla Gómez on 29/01/21.
@@ -27,6 +27,8 @@ public struct ProductViewCell: View {
                     .clipShape(Circle())
                     .shadow(radius: 10)
                 Text(model.title)
+                    .multilineTextAlignment(.center)
+                    .fixedSize(horizontal: false, vertical: true)
                 Spacer()
                 Text(model.price)
             }
@@ -39,21 +41,4 @@ struct ProductCollectionViewCell_Previews: PreviewProvider {
     static var previews: some View {
         ProductViewCell(model: ExampleProductViewData())
     }
-}
-
-public protocol ProductViewDataType {
-    
-    var title: String { get }
-    var url: URL? { get }
-    var price: String { get }
-}
-
-public struct ExampleProductViewData: ProductViewDataType {
-    
-    public init() {
-    }
-    
-    public let title: String = "Xbox"
-    public let url: URL? = URL(string: "www.google.com")
-    public let price: String = "$30.00"
 }

@@ -8,7 +8,12 @@
 import Foundation
 import Components
 
-public enum ProductsComponent {
+public struct ProductComponent: Identifiable {
     
-    case product(viewData: ProductViewDataType)
+    public let data: ProductViewDataType
+    public var id = UUID()
+    
+    public init(data: ProductViewDataType) {
+        self.data = data
+    }
 }

@@ -10,24 +10,21 @@ import Components
 
 struct ProductsView: View {
     
-    @ObservedObject private var viewModel =
-        ProductsViewModel(dependencies: ProductsFactory.makeProductsFactoryDependencies())
+    @ObservedObject private var viewModel: ProductsViewModel
+    
+    init(viewModel: ProductsViewModel) {
+        self.viewModel = viewModel
+    }
     
     var body: some View {
         
         NavigationView {
             ScrollView([ .vertical ], showsIndicators: false) {
-                
-                if self.viewModel.items.isEmpty {
-                    Text("Ahora mismo no se pueden recuperar las colecciones de sesiones")
-                        .font(.title)
-                        .foregroundColor(.secondary)
-                        .lineLimit(nil)
-                        .lineSpacing(8)
-                        .padding(24)
+                if self.viewModel.components.isEmpty {
+                    loadingProducts
                 } else {
-                    ForEach(self.viewModel.items) { collection in
-                        ProductViewCell(model: collection)
+                    ForEach(self.viewModel.components) { component in
+                        ProductViewCell(model: component.data)
                     }
                     .listRowInsets(EdgeInsets())
                 }
@@ -36,10 +33,19 @@ struct ProductsView: View {
             .navigationBarTitle(Text("Productos"))
         }
     }
+    
+    var loadingProducts: some View {
+        Text("Cargando Products")
+            .font(.title)
+            .foregroundColor(.secondary)
+            .lineLimit(nil)
+            .lineSpacing(8)
+            .padding(24)
+      }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ProductsView()
+        ProductsView(viewModel: ProductsViewModel(dependencies: ProductsFactory.makeProductsFactoryDependencies()))
     }
 }

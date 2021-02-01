@@ -17,7 +17,8 @@ struct CleanMonoSwiftApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ProductsView()
+            let viewModel = ProductsViewModel(dependencies: ProductsFactory.makeProductsFactoryDependencies())
+            ProductsView(viewModel: viewModel)
         }
     }
 }

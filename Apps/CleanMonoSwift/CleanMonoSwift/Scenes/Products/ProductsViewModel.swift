@@ -16,14 +16,8 @@ public class ProductsViewModel: ObservableObject, ProductsViewModelType, Product
     // MARK: Inputs
     
     // MARK: Outputs
-    public let isLoading = CurrentValueSubject<Bool, Never>(false)
-    public let error = PassthroughSubject<Error, Never>()
-    public var objectWillChange = PassthroughSubject<Void, Never>()
-    public private(set) var items: [ProductViewData] {
-        willSet {
-            self.objectWillChange.send()
-        }
-    }
+    @Published public var error: Error? = nil
+    @Published public var components: [ProductComponent] = []
     
     // MARK: Private
     private let dependencies: ProductsDependencies
@@ -32,16 +26,17 @@ public class ProductsViewModel: ObservableObject, ProductsViewModelType, Product
     public init(dependencies: ProductsDependencies) {
         self.dependencies = dependencies
         
-        items = []
+        components = []
         downloadProducts()
     }
     
     private func downloadProducts() {
         dependencies.getProducts.execute(product: "product")
+            .debounce(for: .seconds(2), scheduler: DispatchQueue.main)
             .sink { [weak self] (error) in
                 switch error {
                 case .failure(let error):
-                    self?.error.send(error)
+                    self?.error = error
                 case .finished:
                     print("finished")
                 }
@@ -49,9 +44,10 @@ public class ProductsViewModel: ObservableObject, ProductsViewModelType, Product
                 
                 let items = search.itemListElement
                 let itemsData = items.map({ProductViewData(item: $0)})
+                let components = itemsData.map({ProductComponent(data: $0)})
                 
                 DispatchQueue.main.async {
-                    self?.items = itemsData
+                    self?.components = components
                 }
                 
             }.store(in: &disposeBag)

@@ -11,9 +11,8 @@ import CoreUseCases
 import Components
 
 public protocol ProductsViewModelOutputs {
-    var isLoading: CurrentValueSubject<Bool, Never> { get }
-    var error: PassthroughSubject<Error, Never> { get }
-    var items: [ProductViewData] { get }
+    var error: Error? { get }
+    var components: [ProductComponent] { get }
 }
 
 public protocol ProductsViewModelInputs { }
