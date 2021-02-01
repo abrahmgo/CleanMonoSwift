@@ -49,13 +49,11 @@ public class ProductsViewModel: ObservableObject, ProductsViewModelType, Product
                 
                 let items = search.itemListElement
                 let itemsData = items.map({ProductViewData(item: $0)})
-                let itemsComponent = itemsData.map({ProductsComponent.product(viewData: $0)})
                 
                 DispatchQueue.main.async {
                     self?.items = itemsData
                 }
                 
-                self?.components.send(itemsComponent)
             }.store(in: &disposeBag)
     }
 }
