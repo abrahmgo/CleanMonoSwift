@@ -16,6 +16,14 @@
 		B61A920725C4CFBB0025A9CA /* Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B61A920625C4CFBB0025A9CA /* Utils.framework */; };
 		B61A920825C4CFBB0025A9CA /* Utils.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B61A920625C4CFBB0025A9CA /* Utils.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B61A921625C4D0E60025A9CA /* ProductsViewModel+Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = B61A921525C4D0E60025A9CA /* ProductsViewModel+Dependencies.swift */; };
+		B6235ACD25C8875300913AFB /* PropertiesAnalyticsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6235ACA25C8875300913AFB /* PropertiesAnalyticsFactory.swift */; };
+		B6235ACE25C8875300913AFB /* ScreenAnalyticsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6235ACB25C8875300913AFB /* ScreenAnalyticsFactory.swift */; };
+		B6235ACF25C8875300913AFB /* EventAnalyticsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6235ACC25C8875300913AFB /* EventAnalyticsFactory.swift */; };
+		B6235AD325C8876000913AFB /* Analytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6235AD225C8876000913AFB /* Analytics.framework */; };
+		B6235AD425C8876000913AFB /* Analytics.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B6235AD225C8876000913AFB /* Analytics.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B6235AD925C8882200913AFB /* MixpanelEventAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6235AD825C8882200913AFB /* MixpanelEventAnalytics.swift */; };
+		B6235ADD25C8884E00913AFB /* MixpanelPropertiesAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6235ADC25C8884E00913AFB /* MixpanelPropertiesAnalytics.swift */; };
+		B6235AE325C8889900913AFB /* MixpanelScreenAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6235AE225C8889900913AFB /* MixpanelScreenAnalytics.swift */; };
 		B658CD3725C3B489007DC337 /* CleanMonoSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658CD3625C3B489007DC337 /* CleanMonoSwiftApp.swift */; };
 		B658CD3925C3B489007DC337 /* ProductsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B658CD3825C3B489007DC337 /* ProductsView.swift */; };
 		B658CD3B25C3B48B007DC337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B658CD3A25C3B48B007DC337 /* Assets.xcassets */; };
@@ -62,6 +70,7 @@
 				B662A21D25C79B54007EB253 /* NetworkCore.framework in Embed Frameworks */,
 				B61A920525C4CFB60025A9CA /* Core.framework in Embed Frameworks */,
 				B61A920225C4CFAF0025A9CA /* CoreUseCases.framework in Embed Frameworks */,
+				B6235AD425C8876000913AFB /* Analytics.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,6 +84,13 @@
 		B61A920325C4CFB60025A9CA /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B61A920625C4CFBB0025A9CA /* Utils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Utils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B61A921525C4D0E60025A9CA /* ProductsViewModel+Dependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductsViewModel+Dependencies.swift"; sourceTree = "<group>"; };
+		B6235ACA25C8875300913AFB /* PropertiesAnalyticsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertiesAnalyticsFactory.swift; sourceTree = "<group>"; };
+		B6235ACB25C8875300913AFB /* ScreenAnalyticsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenAnalyticsFactory.swift; sourceTree = "<group>"; };
+		B6235ACC25C8875300913AFB /* EventAnalyticsFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventAnalyticsFactory.swift; sourceTree = "<group>"; };
+		B6235AD225C8876000913AFB /* Analytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Analytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6235AD825C8882200913AFB /* MixpanelEventAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixpanelEventAnalytics.swift; sourceTree = "<group>"; };
+		B6235ADC25C8884E00913AFB /* MixpanelPropertiesAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixpanelPropertiesAnalytics.swift; sourceTree = "<group>"; };
+		B6235AE225C8889900913AFB /* MixpanelScreenAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixpanelScreenAnalytics.swift; sourceTree = "<group>"; };
 		B658CD3325C3B489007DC337 /* CleanMonoSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CleanMonoSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B658CD3625C3B489007DC337 /* CleanMonoSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanMonoSwiftApp.swift; sourceTree = "<group>"; };
 		B658CD3825C3B489007DC337 /* ProductsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsView.swift; sourceTree = "<group>"; };
@@ -106,6 +122,7 @@
 				B61A920725C4CFBB0025A9CA /* Utils.framework in Frameworks */,
 				B61A91FD25C4CFA80025A9CA /* Components.framework in Frameworks */,
 				B662A21C25C79B54007EB253 /* NetworkCore.framework in Frameworks */,
+				B6235AD325C8876000913AFB /* Analytics.framework in Frameworks */,
 				B61A920425C4CFB60025A9CA /* Core.framework in Frameworks */,
 				B61A920125C4CFAF0025A9CA /* CoreUseCases.framework in Frameworks */,
 				FDC0F9C067B96F0987F584FE /* Pods_CleanMonoSwift.framework in Frameworks */,
@@ -142,6 +159,7 @@
 		B61A91FB25C4CFA80025A9CA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B6235AD225C8876000913AFB /* Analytics.framework */,
 				B662A21B25C79B54007EB253 /* NetworkCore.framework */,
 				B61A920625C4CFBB0025A9CA /* Utils.framework */,
 				B61A920325C4CFB60025A9CA /* Core.framework */,
@@ -173,6 +191,27 @@
 			path = Products;
 			sourceTree = "<group>";
 		};
+		B6235AC925C8874600913AFB /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				B6235AD725C8880600913AFB /* Mixpanel */,
+				B6235ACC25C8875300913AFB /* EventAnalyticsFactory.swift */,
+				B6235ACA25C8875300913AFB /* PropertiesAnalyticsFactory.swift */,
+				B6235ACB25C8875300913AFB /* ScreenAnalyticsFactory.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		B6235AD725C8880600913AFB /* Mixpanel */ = {
+			isa = PBXGroup;
+			children = (
+				B6235AD825C8882200913AFB /* MixpanelEventAnalytics.swift */,
+				B6235ADC25C8884E00913AFB /* MixpanelPropertiesAnalytics.swift */,
+				B6235AE225C8889900913AFB /* MixpanelScreenAnalytics.swift */,
+			);
+			path = Mixpanel;
+			sourceTree = "<group>";
+		};
 		B658CD2A25C3B489007DC337 = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +240,7 @@
 				B658CD3625C3B489007DC337 /* CleanMonoSwiftApp.swift */,
 				B658CD3A25C3B48B007DC337 /* Assets.xcassets */,
 				B658CD3F25C3B48B007DC337 /* Info.plist */,
+				B6235AC925C8874600913AFB /* Analytics */,
 				B662A21025C79AEB007EB253 /* Config */,
 				B61A920B25C4D0C70025A9CA /* Scenes */,
 				B658CD3C25C3B48B007DC337 /* Preview Content */,
@@ -417,13 +457,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6235ACF25C8875300913AFB /* EventAnalyticsFactory.swift in Sources */,
+				B6235ACD25C8875300913AFB /* PropertiesAnalyticsFactory.swift in Sources */,
 				B662A1EB25C79502007EB253 /* ProductsFactory.swift in Sources */,
+				B6235AE325C8889900913AFB /* MixpanelScreenAnalytics.swift in Sources */,
+				B6235ACE25C8875300913AFB /* ScreenAnalyticsFactory.swift in Sources */,
 				B6D6439125C4E5D10056F719 /* ProductViewData.swift in Sources */,
 				B662A21225C79AFA007EB253 /* APIConfig.swift in Sources */,
 				B61A921625C4D0E60025A9CA /* ProductsViewModel+Dependencies.swift in Sources */,
 				B6D6438925C4E4A10056F719 /* ProductsComponent.swift in Sources */,
 				B658CD3925C3B489007DC337 /* ProductsView.swift in Sources */,
+				B6235ADD25C8884E00913AFB /* MixpanelPropertiesAnalytics.swift in Sources */,
 				B6D6438D25C4E4E60056F719 /* ProductsViewModel.swift in Sources */,
+				B6235AD925C8882200913AFB /* MixpanelEventAnalytics.swift in Sources */,
 				B662A21625C79B0F007EB253 /* API.swift in Sources */,
 				B658CD3725C3B489007DC337 /* CleanMonoSwiftApp.swift in Sources */,
 			);

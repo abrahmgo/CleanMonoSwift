@@ -7,10 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6235AC125C886DB00913AFB /* ScreenAnalyticsType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6235AC025C886DB00913AFB /* ScreenAnalyticsType.swift */; };
+		B6235AC425C886F800913AFB /* EventAnalyticsType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6235AC325C886F800913AFB /* EventAnalyticsType.swift */; };
+		B6235AC725C8870D00913AFB /* PropertiesAnalyticsType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6235AC625C8870D00913AFB /* PropertiesAnalyticsType.swift */; };
 		B658CD2325C3B447007DC337 /* Analytics.h in Headers */ = {isa = PBXBuildFile; fileRef = B658CD2125C3B447007DC337 /* Analytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6235AC025C886DB00913AFB /* ScreenAnalyticsType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenAnalyticsType.swift; sourceTree = "<group>"; };
+		B6235AC325C886F800913AFB /* EventAnalyticsType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAnalyticsType.swift; sourceTree = "<group>"; };
+		B6235AC625C8870D00913AFB /* PropertiesAnalyticsType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesAnalyticsType.swift; sourceTree = "<group>"; };
 		B658CD1E25C3B447007DC337 /* Analytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Analytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B658CD2125C3B447007DC337 /* Analytics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Analytics.h; sourceTree = "<group>"; };
 		B658CD2225C3B447007DC337 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,6 +54,9 @@
 			children = (
 				B658CD2125C3B447007DC337 /* Analytics.h */,
 				B658CD2225C3B447007DC337 /* Info.plist */,
+				B6235AC025C886DB00913AFB /* ScreenAnalyticsType.swift */,
+				B6235AC325C886F800913AFB /* EventAnalyticsType.swift */,
+				B6235AC625C8870D00913AFB /* PropertiesAnalyticsType.swift */,
 			);
 			path = Analytics;
 			sourceTree = "<group>";
@@ -94,6 +103,7 @@
 				TargetAttributes = {
 					B658CD1D25C3B447007DC337 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -130,6 +140,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6235AC125C886DB00913AFB /* ScreenAnalyticsType.swift in Sources */,
+				B6235AC725C8870D00913AFB /* PropertiesAnalyticsType.swift in Sources */,
+				B6235AC425C886F800913AFB /* EventAnalyticsType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +274,7 @@
 		B658CD2725C3B447007DC337 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -277,6 +291,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.andres.bonilla.Analytics;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +300,7 @@
 		B658CD2825C3B447007DC337 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

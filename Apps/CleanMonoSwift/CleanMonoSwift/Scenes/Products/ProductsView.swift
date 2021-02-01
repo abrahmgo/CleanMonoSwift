@@ -7,12 +7,20 @@
 
 import SwiftUI
 import Components
+import Analytics
 
 struct ProductsView: View {
     
     @ObservedObject private var viewModel: ProductsViewModel
     
-    init(viewModel: ProductsViewModel) {
+    private let screenAnalytics: ScreenAnalyticsType
+    private let eventAnalytics: EventAnalyticsType
+    
+    init(viewModel: ProductsViewModel,
+         screenAnalytics: ScreenAnalyticsType = ScreenAnalyticsFactory.makeAnalytics(),
+         eventAnalytics: EventAnalyticsType = EventAnalyticsFactory.makeAnalytics()) {
+        self.eventAnalytics = eventAnalytics
+        self.screenAnalytics = screenAnalytics
         self.viewModel = viewModel
     }
     
@@ -25,12 +33,19 @@ struct ProductsView: View {
                 } else {
                     ForEach(self.viewModel.components) { component in
                         ProductViewCell(model: component.data)
+                            .onTapGesture {
+                                eventAnalytics.track(eventName: component.data.title, properties: [:])
+                            }
                     }
                     .listRowInsets(EdgeInsets())
                 }
             }
             .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
             .navigationBarTitle(Text("Productos"))
+        }
+        
+        .onAppear() {
+            screenAnalytics.track(screenName: "products-view", properties: [:])
         }
     }
     
