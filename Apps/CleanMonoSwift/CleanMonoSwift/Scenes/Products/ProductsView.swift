@@ -32,10 +32,7 @@ struct ProductsView: View {
                     loadingProducts
                 } else {
                     ForEach(self.viewModel.components) { component in
-                        ProductViewCell(model: component.data)
-                            .onTapGesture {
-                                eventAnalytics.track(eventName: component.data.title, properties: [:])
-                            }
+                        self.productView(component: component)
                     }
                     .listRowInsets(EdgeInsets())
                 }
@@ -49,8 +46,15 @@ struct ProductsView: View {
         }
     }
     
+    func productView(component: ProductsComponent) -> some View {
+        switch component {
+        case .product(let viewData):
+            return ProductViewCell(model: viewData)
+        }
+    }
+    
     var loadingProducts: some View {
-        Text("Cargando Products")
+        Text("Cargando Productos")
             .font(.title)
             .foregroundColor(.secondary)
             .lineLimit(nil)

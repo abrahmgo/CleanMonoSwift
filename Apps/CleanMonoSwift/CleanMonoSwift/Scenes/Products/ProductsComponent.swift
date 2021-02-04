@@ -8,12 +8,22 @@
 import Foundation
 import Components
 
-public struct ProductComponent: Identifiable {
+public enum ProductsComponent: Identifiable {
     
-    public let data: ProductViewDataType
-    public var id = UUID()
+    public var id: String {
+        return UUID().uuidString
+    }
     
-    public init(data: ProductViewDataType) {
-        self.data = data
+    case product(viewData: ProductViewDataType)
+}
+
+public extension ProductsComponent {
+    
+    static func == (lhs: ProductsComponent, rhs: ProductsComponent) -> Bool{
+        return lhs.id == rhs.id
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(self.id)
     }
 }

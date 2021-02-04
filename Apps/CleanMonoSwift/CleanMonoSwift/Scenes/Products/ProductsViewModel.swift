@@ -17,7 +17,7 @@ public class ProductsViewModel: ObservableObject, ProductsViewModelType, Product
     
     // MARK: Outputs
     @Published public var error: Error? = nil
-    @Published public var components: [ProductComponent] = []
+    @Published public var components: [ProductsComponent] = []
     
     // MARK: Private
     private let dependencies: ProductsDependencies
@@ -44,7 +44,7 @@ public class ProductsViewModel: ObservableObject, ProductsViewModelType, Product
                 
                 let items = search.itemListElement
                 let itemsData = items.map({ProductViewData(item: $0)})
-                let components = itemsData.map({ProductComponent(data: $0)})
+                let components = itemsData.map({ProductsComponent.product(viewData: $0)})
                 
                 DispatchQueue.main.async {
                     self?.components = components

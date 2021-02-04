@@ -12,7 +12,7 @@ import Components
 
 public protocol ProductsViewModelOutputs {
     var error: Error? { get }
-    var components: [ProductComponent] { get }
+    var components: [ProductsComponent] { get }
 }
 
 public protocol ProductsViewModelInputs { }
